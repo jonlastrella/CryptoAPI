@@ -9,7 +9,6 @@ $(document).ready(function(){
                 coinId += "<li>" + res.data[i].symbol + " " +  "<b>" + res.data[i].name + "</b>" + " " + "ID: " + res.data[i].id + "</li>"
                 $(".allCoins").append(coinId);
             }
-
         }
         displayCoins();
     })
@@ -19,7 +18,6 @@ $(document).ready(function(){
         var coin = $(".coin").val();
         $.get(`${url}${coin}`,function(res){
             var coins = "";
-            console.log(res);
             coins += "<h5>" + res[0].name + " " + "(" + res[0].symbol + ")" + "</h5>"
             coins += "<h2>" + "$ " + res[0].price_usd + "</h4>"
             coins += "<h5>" + "Change (1 hour)" + " " + res[0].percent_change_1h + "%" + "</h5>"
