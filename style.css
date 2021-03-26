@@ -16,7 +16,7 @@ p {
 ul {
   list-style-type: none;
   border: 1px solid whitesmoke;
-  height: 500px;
+  height: 200px;
   overflow: hidden;
   overflow-y: scroll;
   background-color: #040b16;
